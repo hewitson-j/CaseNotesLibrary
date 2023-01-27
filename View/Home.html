@@ -6,7 +6,6 @@
     <meta name="author" content="Jacob Hewitson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Stylesheets/home.css">
-    <script src="../Scripts/home.js" defer></script>
 </head>
 <body>
     <h1>Welcome!</h1>
@@ -17,12 +16,25 @@
     </select>
     <br>
     <br>
-    <div id="product-options">
-        <label for="product-options-dropdown">Case Type:</label>
+    <div id="account-recovery-options" class="case-options">
+        <label for="account-recovery-dropdown">Case Type:</label>
         <br>
         <br>
-        <select id="product-options-dropdown">
+        <select id="account-recovery-dropdown" class="case-dropdowns">
             <option value="none" selected>Select a case...</option>
+            <option value="regular-reset">Regular Password Reset</option>
+            <option value="email-reset">Email Password Reset</option>
+            <option value="parent-reset">Parent Resetting Child's Password</option>
+        </select>
+    </div>
+    <div id="mfa-options" class="case-options">
+        <label for="mfa-dropdown">Case Type:</label>
+        <br>
+        <br>
+        <select id="mfa-dropdown" class="case-dropdowns">
+            <option value="none" selected>Select a case...</option>
+            <option value="mfa-setup">MFA Setup</option>
+            <option value="mfa-reset">MFA Reset for Lost Device</option>
         </select>
     </div>
     <br>
@@ -31,8 +43,12 @@
 Text will appear here...</textarea>
     <br>
     <br>
+    <input type="button" value="Copy text to Clipboard" id="copy-button">
+    <br>
+    <br>
     <div id="copyright">
         <hr>
         Copyright © Jacob Hewitson 2023
     </div>
+    <script src="../Scripts/home.js" defer></script>
 </body>

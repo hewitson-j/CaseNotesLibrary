@@ -33,15 +33,23 @@ h1 {
     padding: .5rem;
 }
 
-#product-options{
+.case-options {
     display: none;
     align-items: center;
     text-align: center;
     font-size: 20pt;
 }
 
-#product-options-dropdown {
+.case-dropdowns {
     font-size: 15pt;
     display: block;
     margin: 0 auto;
+}
+
+#copy-button {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 15pt;
+    border-radius: 5px;
 }
