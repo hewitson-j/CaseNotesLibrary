@@ -21,7 +21,7 @@ function loginFunction() {
 
   if (username == "ADMIN_GSD" && password == "gsdadmin1234!") {
     alert("Welcome!");
-    window.location.href = "View/Home.html";
+    window.location.href = "Home.html";
     return;
   } else if (username == "" || password == "") {
     alert("Username or password not filled.\nPlease fill all fields.");
