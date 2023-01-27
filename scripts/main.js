@@ -22,8 +22,17 @@ function hideCaseDropdowns() {
   }
 }
 
+//Reads JSON File with note information
+function readJson(callback) {
+  fetch("/scripts/test.json")
+    .then((response) => response.json())
+    .then((data) => callback(data));
+  // data = object
+  // data.
+}
+
+// Opens Product Case Dropdown
 function productDropdownFunction() {
-  //   alert(productDropdown.value);
   switch (productDropdown.value) {
     case "account-recovery":
       hideCaseDropdowns();
@@ -33,12 +42,16 @@ function productDropdownFunction() {
       hideCaseDropdowns();
       mfaDropdown.style.display = "block";
       break;
+    default:
+      hideCaseDropdowns();
+      break;
   }
 }
 
-function readFile(fileName) {
-  let reader = new FileReader();
-}
+readJson((data) => {
+  textArea.value = data["notes"][0]["body"];
+  console.log(data);
+});
 
 copyButton.addEventListener("click", copyText);
 productDropdown.addEventListener("change", productDropdownFunction);
