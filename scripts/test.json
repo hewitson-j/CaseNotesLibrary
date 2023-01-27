@@ -1,10 +1,19 @@
 {
     "notes": [
         {
-            "body": "Customer called...\nthis is a test"
+            "body": "● Username: \n● Position/Calling: \n● Phone #: \n● E-mail: "
         },
         {
             "body": "Customer called..."
+        },
+        {
+            "body": "Customer called too..."
+        },
+        {
+            "body": "Customer called too..."
+        },
+        {
+            "body": "Customer called too..."
         }
     ]
 }
