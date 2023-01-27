@@ -9,8 +9,6 @@ const accountRecoveryDropdown = document.querySelector(
 );
 const mfaDropdown = document.querySelector("#mfa-options");
 
-const fs = require(fs);
-
 function copyText() {
   textArea.select();
   navigator.clipboard.writeText(textArea.value);
@@ -36,9 +34,9 @@ function productDropdownFunction() {
   }
 }
 
-// function readFile(fileName) {
-//   let reader = new FileReader();
-// }
+function readFile(fileName) {
+  let reader = new FileReader();
+}
 
 copyButton.addEventListener("click", copyText);
 productDropdown.addEventListener("change", productDropdownFunction);
