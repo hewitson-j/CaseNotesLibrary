@@ -36,7 +36,9 @@ function productDropdownFunction() {
   }
 }
 
-function readFile() {}
+function readFile(fileName) {
+  let reader = new FileReader();
+}
 
 copyButton.addEventListener("click", copyText);
 productDropdown.addEventListener("change", productDropdownFunction);
