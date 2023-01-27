@@ -6,7 +6,33 @@
     <meta name="author" content="Jacob Hewitson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Stylesheets/home.css">
+    <script src="../Scripts/home.js" defer></script>
 </head>
 <body>
     <h1>Welcome!</h1>
+    <select id="categories-dropdown">
+        <option value="none" selected>Select a product...</option>
+        <option value="account-recovery">Account Recovery</option>
+        <option value="reset-mfa">MFA/Two-Step Authentication</option>
+    </select>
+    <br>
+    <br>
+    <div id="product-options">
+        <label for="product-options-dropdown">Case Type:</label>
+        <br>
+        <br>
+        <select id="product-options-dropdown">
+            <option value="none" selected>Select a case...</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <textarea id="notes-field" readonly>
+Text will appear here...</textarea>
+    <br>
+    <br>
+    <div id="copyright">
+        <hr>
+        Copyright © Jacob Hewitson 2023
+    </div>
 </body>
