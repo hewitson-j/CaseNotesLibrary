@@ -4,6 +4,8 @@ const copyButton = document.querySelector("#copy-button");
 const productDropdown = document.querySelector("#categories-dropdown");
 const caseDropdowns = document.querySelectorAll(".case-options");
 
+// Test
+
 const accountRecoveryDropdown = document.querySelector(
   "#account-recovery-options"
 );
