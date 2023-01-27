@@ -1,0 +1,7 @@
+* {
+    font-family: "Arial";
+}
+
+body {
+    background: linear-gradient(to right, rgb(11, 60, 172), white, white, white, rgb(11, 60, 172));
+}

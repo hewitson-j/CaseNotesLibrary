@@ -1,0 +1,34 @@
+* {
+    font-family: "Arial";
+}
+
+body {
+    background: linear-gradient(to right, rgb(11, 60, 172), white, white, white, rgb(11, 60, 172));
+}
+
+#login {
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+.user-pass{
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: 15pt;
+}
+
+.buttons {
+    padding: .5rem;
+    font-size: 15pt;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
