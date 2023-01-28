@@ -52,6 +52,7 @@ function productDropdownFunction() {
       break;
     default:
       hideCaseDropdowns();
+      textArea.value = "Text will appear here...";
       break;
   }
 }
@@ -71,7 +72,7 @@ function accountRecoveryDropdownFunction() {
       break;
     case "parent-reset":
       readJson((data) => {
-        textArea.value = data["notes"][2]["body"];
+        textArea.value = data["notes"][3]["body"];
       });
       break;
     default:
@@ -84,7 +85,7 @@ function mfaDropdownFunction() {
   switch (mfaDropdown.value) {
     case "mfa-setup":
       readJson((data) => {
-        textArea.value = data["notes"][3]["body"];
+        textArea.value = data["notes"][2]["body"];
       });
       break;
     case "mfa-reset":
