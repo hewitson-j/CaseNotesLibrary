@@ -32,7 +32,7 @@ function hideCaseDropdowns() {
 
 //Reads JSON File with note information
 function readJson(callback) {
-  fetch("/scripts/responses.json")
+  fetch("scripts/responses.json")
     .then((response) => response.json())
     .then((data) => callback(data));
   // data = object
